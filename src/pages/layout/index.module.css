@@ -1,39 +1,118 @@
 .main {
-    height: 100dvh;
-    width: 100dvw;
-    overflow-x: hidden;
+  height: 100dvh;
+  width: 100dvw;
+  overflow-x: hidden;
 }
 
 .content {
-    background-color: #272727;
-    display: grid;
-    grid-template-areas:
-      "navbar navbar navbar"
-      "aside content content"
-      "footer footer footer";
-      height: 100%;
-      width: 100%;
+  background-color: #272727;
+  display: grid;
+  grid-template-areas:
+    "navbar navbar navbar"
+    "aside content content"
+    "footer footer footer";
+  height: 100%;
+  width: 100%;
 }
 
 .navbar {
-    background-color: #000123;
-    grid-area: navbar;
-    position: fixed;
-    width: 100%;
-    height: 12dvh;
-    z-index: 1000;
+  background-color: #000123;
+  grid-area: navbar;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  height: 12dvh;
+  z-index: 100;
+}
+
+.navTitle {
+  top: 35%;
+  left: 35%;
+  background: linear-gradient(
+    45deg,
+    #383b84,
+    #272727,
+    #ff0f7b,
+    #00ffff,
+    #fff,
+    rgba(128, 128, 128, 0.493)
+  );
+  background-size: 400%;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: title 10s linear infinite;
+}
+
+@keyframes title {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.loginButton {
+  color: antiquewhite;
+  background-color: #ff0f7b;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.registerButton {
+  color: antiquewhite;
+  padding: 1rem;
+  text-decoration: none;
 }
 
 .aside {
-    grid-area: aside;
-    background-color: #000123;
-    height: 85dvh;
+  top: 2rem;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 1.7rem;
+  width: 15dvw;
+  grid-area: aside;
+  background-color: #000123;
+  height: 85dvh;
+}
+
+.asideTitle {
+  color: antiquewhite;
+}
+
+.asideButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+.asideRef {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: antiquewhite;
+  width: fit-content;
 }
 
 .footer {
-    grid-area: footer;
-    background-color: #000123;
-    height: 12dvh;
-    align-self: flex-end;
+  grid-area: footer;
+  background-color: #000123;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem;
 }
 
+.footerTitle {
+  color: antiquewhite;
+}
+
+.contactButton {
+  text-decoration: none;
+  color: antiquewhite;
+}
