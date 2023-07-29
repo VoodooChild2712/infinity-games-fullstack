@@ -1,0 +1,56 @@
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 2.5rem;
+  }
+  
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: antiquewhite;
+    transition: all 0.3s ease;
+  }
+  
+  .open .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .open .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .modal {
+    width: 25dvw;
+    height: 80dvh;
+    padding: 3rem;
+    position: absolute;
+    top: 2rem;
+    background-color: #000123;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 3rem;
+    border: 2px solid black ;
+  }
+  
+  .modal a {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: antiquewhite;
+  }

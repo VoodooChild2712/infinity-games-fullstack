@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./index.module.css";
 import Navbar from "./navbar";
 import { Outlet } from "react-router";
-import Aside from "./aside";
 import Footer from "./footer";
 
 const Layout = () => {
@@ -11,7 +10,6 @@ const Layout = () => {
       <div className={styles.content}>
         <Navbar />
         <Outlet />
-        <Aside />
         <Footer />
       </div>
       ;

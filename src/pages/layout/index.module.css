@@ -68,35 +68,6 @@
   text-decoration: none;
 }
 
-.aside {
-  top: 2rem;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  padding: 1.7rem;
-  width: 15dvw;
-  grid-area: aside;
-  background-color: #000123;
-  height: 85dvh;
-}
-
-.asideTitle {
-  color: antiquewhite;
-}
-
-.asideButtons {
-  display: flex;
-  flex-direction: column;
-}
-
-.asideRef {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  text-decoration: none;
-  color: antiquewhite;
-  width: fit-content;
-}
-
 .footer {
   grid-area: footer;
   background-color: #000123;

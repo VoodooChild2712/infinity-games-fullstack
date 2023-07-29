@@ -1,13 +1,14 @@
-import React from "react";
+import { React, useState } from "react";
 import styles from "../index.module.css";
 import { Link } from "react-router-dom";
 import Register from "../../register/index";
 import Login from "../../login/index";
+import BurgerMenu from "../../components/burger-menu";
 
 const Navbar = () => {
   return (
     <div className={styles.navbar}>
-      <div className={styles.navModal}></div>
+      <BurgerMenu />
       <div className={styles.navTitleContainer}>
         <h1 className={styles.navTitle}>INFINITY GAMES</h1>
       </div>
